@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE READY, STAY SAFE! - Storybook 2026 | I.E. 0148 MVRHT</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#D91C1C',
+                        brandBlue: '#0F4C81',
+                        brandYellow: '#F59E0B',
+                        brandGreen: '#10B981',
+                        brandDark: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom highlight classes for the interactive text highlighter */
+        .hl-yellow { background-color: #fef08a !important; color: #713f12 !important; border-radius: 4px; padding: 2px 4px; }
+        .hl-green { background-color: #bbf7d0 !important; color: #14532d !important; border-radius: 4px; padding: 2px 4px; }
+        .hl-blue { background-color: #bfdbfe !important; color: #1e3a8a !important; border-radius: 4px; padding: 2px 4px; }
+        
+        .dark .hl-yellow { background-color: #854d0e !important; color: #fef08a !important; }
+        .dark .hl-green { background-color: #14532d !important; color: #bbf7d0 !important; }
+        .dark .hl-blue { background-color: #1e3a8a !important; color: #bfdbfe !important; }
+
+        /* Printable certificate styling */
+        @media print {
+            body * { visibility: hidden; }
+            #printable-certificate, #printable-certificate * { visibility: visible; }
+            #printable-certificate { position: absolute; left: 0; top: 0; width: 100%; height: 100%; margin: 0; padding: 20px; box-shadow: none; }
+            .no-print { display: none !important; }
+        }
+        
+        .voc-word {
+            cursor: pointer;
+            border-bottom: 2px dashed #0F4C81;
+            font-weight: 600;
+            color: #0F4C81;
+            transition: all 0.2s;
+        }
+        .dark .voc-word {
+            border-bottom-color: #38bdf8;
+            color: #38bdf8;
+        }
+        .voc-word:hover {
+            background-color: #e0f2fe;
+            border-radius: 4px;
+        }
+        .dark .voc-word:hover {
+            background-color: #0c4a6e;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+    <!-- TOP HEADER WITH INSTITUTIONAL CREST -->
+    <header class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 shadow-sm sticky top-0 z-40 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- School Crest and Info -->
+            <div class="flex items-center gap-4 text-center md:text-left">
+                <!-- SVG Crest Recreation -->
+                <div class="w-16 h-20 flex-shrink-0 drop-shadow-md hover:scale-105 transition-transform" title="Shield of I.E. 0148 MVRHT">
+                    <svg viewBox="0 0 200 250" class="w-full h-full">
+                        <!-- Outer Crest Shape -->
+                        <path d="M 10 20 Q 100 0 190 20 L 190 140 C 190 200 100 245 100 245 C 100 245 10 200 10 140 Z" fill="#D91C1C" stroke="#1E293B" stroke-width="4"/>
+                        <!-- Top Header Band (White) -->
+                        <path d="M 12 21 Q 100 2 188 21 L 188 65 L 12 65 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/>
+                        <!-- Vertical Red/White Dividers inside Header -->
+                        <line x1="70" y1="12" x2="70" y2="65" stroke="#D91C1C" stroke-width="4"/>
+                        <line x1="130" y1="12" x2="130" y2="65" stroke="#D91C1C" stroke-width="4"/>
+                        <!-- Text: I E M -->
+                        <text x="40" y="52" font-family="Arial, sans-serif" font-weight="900" font-size="34" fill="#1E293B" text-anchor="middle">I</text>
+                        <text x="100" y="52" font-family="Arial, sans-serif" font-weight="900" font-size="34" fill="#1E293B" text-anchor="middle">E</text>
+                        <text x="160" y="52" font-family="Arial, sans-serif" font-weight="900" font-size="34" fill="#1E293B" text-anchor="middle">M</text>
+                        
+                        <!-- Text: M.V.R.H.T -->
+                        <text x="100" y="85" font-family="Arial, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">M.V.R.H.T</text>
+                        
+                        <!-- Map of Peru (Center White Graphic) -->
+                        <path d="M 95 95 L 115 100 L 125 115 L 130 135 L 125 155 L 115 175 L 105 190 L 95 185 L 85 160 L 75 145 L 75 125 L 85 105 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+                        <!-- Number 148 inside Peru map -->
+                        <text x="102" y="125" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#1E293B" text-anchor="middle">1</text>
+                        <text x="102" y="147" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#1E293B" text-anchor="middle">4</text>
+                        <text x="102" y="169" font-family="Arial, sans-serif" font-weight="900" font-size="18" fill="#1E293B" text-anchor="middle">8</text>
+                        
+                        <!-- Laurel Branches (Left & Right Green) -->
+                        <!-- Left Laurel -->
+                        <path d="M 35 120 Q 25 150 45 180 Q 65 200 85 210" fill="none" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+                        <circle cx="30" cy="130" r="5" fill="#10B981"/>
+                        <circle cx="26" cy="150" r="5" fill="#10B981"/>
+                        <circle cx="34" cy="170" r="5" fill="#10B981"/>
+                        <circle cx="50" cy="190" r="5" fill="#10B981"/>
+                        <!-- Right Laurel -->
+                        <path d="M 165 120 Q 175 150 155 180 Q 135 200 115 210" fill="none" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+                        <circle cx="170" cy="130" r="5" fill="#10B981"/>
+                        <circle cx="174" cy="150" r="5" fill="#10B981"/>
+                        <circle cx="166" cy="170" r="5" fill="#10B981"/>
+                        <circle cx="150" cy="190" r="5" fill="#10B981"/>
+
+                        <!-- Text at Base: S.J.L. -->
+                        <text x="100" y="235" font-family="Arial, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF" text-anchor="middle">S.J.L.</text>
+                    </svg>
+                </div>
+
+                <div>
+                    <h1 class="text-base md:text-lg font-bold text-slate-900 dark:text-white leading-tight uppercase tracking-tight">
+                        I.E. N.° 0148 “MAESTRO VÍCTOR RAÚL HAYA DE LA TORRE”
+                    </h1>
+                    <p class="text-xs md:text-sm font-semibold text-brandBlue dark:text-sky-400">
+                        S.J.L. – AULA DE INNOVACIÓN PEDAGÓGICA – NIVEL SECUNDARIA – 2026
+                    </p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">
+                        English Area • 4th Grade Secondary • CNEB Unit 7: <span class="font-bold text-brandRed">BE READY, STAY SAFE!</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Global Score & Controls -->
+            <div class="flex items-center gap-3 bg-slate-100 dark:bg-slate-700/60 p-2.5 rounded-xl border border-slate-200 dark:border-slate-600">
+                <!-- Stars Counter -->
+                <div class="flex items-center gap-1.5 px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 rounded-lg font-bold text-sm" title="Total Stars Earned">
+                    <i class="fa-solid fa-star text-amber-500 animate-pulse"></i>
+                    <span id="star-count">0</span> / <span id="max-stars">45</span>
+                </div>
+
+                <!-- Font Size Adjustment -->
+                <div class="flex items-center bg-white dark:bg-slate-800 rounded-lg border border-slate-300 dark:border-slate-600 overflow-hidden text-xs">
+                    <button onclick="changeFontSize(-1)" class="px-2 py-1 hover:bg-slate-100 dark:hover:bg-slate-700 font-bold" title="Decrease Text Size">A-</button>
+                    <button onclick="changeFontSize(1)" class="px-2 py-1 hover:bg-slate-100 dark:hover:bg-slate-700 font-bold border-l border-slate-200 dark:border-slate-600" title="Increase Text Size">A+</button>
+                </div>
+
+                <!-- Theme Toggle -->
+                <button onclick="toggleDarkMode()" class="p-2 bg-white dark:bg-slate-800 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700" title="Toggle Light/Dark Theme">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-slate-200 dark:bg-slate-700 h-2">
+            <div id="overall-progress" class="bg-gradient-to-r from-brandBlue via-brandYellow to-brandGreen h-2 transition-all duration-500 w-0"></div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION MENU BAR -->
+    <nav class="bg-brandBlue text-white shadow-md sticky top-[80px] z-30">
+        <div class="max-w-7xl mx-auto px-2 overflow-x-auto">
+            <div class="flex items-center space-x-1 py-2 text-xs md:text-sm whitespace-nowrap">
+                <button onclick="switchTab('home')" id="nav-home" class="nav-btn active px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-house"></i> Home
+                </button>
+                <button onclick="switchTab('chap1')" id="nav-chap1" class="nav-btn px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-shield-halved"></i> Ch 1: Before
+                </button>
+                <button onclick="switchTab('chap2')" id="nav-chap2" class="nav-btn px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-bell-concierge"></i> Ch 2: During
+                </button>
+                <button onclick="switchTab('chap3')" id="nav-chap3" class="nav-btn px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-person-walking-arrow-right"></i> Ch 3: After
+                </button>
+                <button onclick="switchTab('chap4')" id="nav-chap4" class="nav-btn px-3 py-2 rounded-lg font-semibold bg-amber-500 text-slate-900 hover:bg-amber-400 transition flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-pen-to-square"></i> Ch 4: Writing Workshop
+                </button>
+                <button onclick="switchTab('grammar')" id="nav-grammar" class="nav-btn px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-book-bookmark"></i> Grammar Corner
+                </button>
+                <button onclick="switchTab('glossary')" id="nav-glossary" class="nav-btn px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-spell-check"></i> Vocabulary
+                </button>
+                <button onclick="switchTab('certificate')" id="nav-certificate" class="nav-btn px-3 py-2 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-1.5 text-amber-300">
+                    <i class="fa-solid fa-award"></i> Certificate
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HIGHLIGHTER TOOL BAR (Shown for Readers) -->
+    <div id="highlighter-toolbar" class="bg-amber-50 dark:bg-slate-800 border-b border-amber-200 dark:border-slate-700 py-2 px-4 text-xs flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+            <span class="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1">
+                <i class="fa-solid fa-highlighter text-amber-500"></i> Text Highlighter Tool:
+            </span>
+            <span class="text-slate-500 dark:text-slate-400 hidden sm:inline">(Select text in stories, then click a color)</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <button onclick="applyHighlight('yellow')" class="px-2.5 py-1 bg-yellow-200 text-yellow-900 font-bold rounded hover:bg-yellow-300 transition">
+                Main Idea (Yellow)
+            </button>
+            <button onclick="applyHighlight('green')" class="px-2.5 py-1 bg-green-200 text-green-900 font-bold rounded hover:bg-green-300 transition">
+                New Vocab (Green)
+            </button>
+            <button onclick="applyHighlight('blue')" class="px-2.5 py-1 bg-blue-200 text-blue-900 font-bold rounded hover:bg-blue-300 transition">
+                Doubt/Question (Blue)
+            </button>
+            <button onclick="removeHighlight()" class="px-2.5 py-1 bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300 font-semibold rounded hover:bg-slate-300 transition" title="Clear highlight on selected text">
+                Clear
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="content-container" class="flex-grow max-w-6xl w-full mx-auto p-4 md:p-6 transition-all">
+
+        <!-- ================= SECTION: HOME ================= -->
+        <section id="sec-home" class="tab-content space-y-6">
+            <!-- Hero Banner -->
+            <div class="relative bg-gradient-to-r from-brandBlue to-slate-900 text-white rounded-3xl p-6 md:p-10 shadow-xl overflow-hidden border border-slate-700">
+                <div class="relative z-10 max-w-2xl space-y-4">
+                    <span class="px-3 py-1 bg-brandRed/90 text-white font-bold text-xs uppercase tracking-wider rounded-full">Unit 7 • San Juan de Lurigancho</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
+                        BE READY, <span class="text-amber-400">STAY SAFE!</span>
+                    </h2>
+                    <p class="text-base md:text-lg text-slate-200 font-medium">
+                        An Interactive English Storybook About Earthquake Safety
+                    </p>
+                    <div class="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 text-sm leading-relaxed">
+                        “Welcome to our English Storybook! Learn how to prepare for an earthquake, stay safe and protect your school community in San Juan de Lurigancho. Read the stories, practise English and complete the challenges!”
+                    </div>
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <button onclick="switchTab('chap1')" class="px-6 py-3 bg-brandYellow hover:bg-amber-400 text-slate-900 font-bold rounded-xl shadow-lg transition flex items-center gap-2">
+                            Start Reading <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <button onclick="switchTab('grammar')" class="px-6 py-3 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-xl border border-white/30 backdrop-blur-sm transition">
+                            Explore Grammar Rules
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Decorative SVG Background Graphic -->
+                <div class="absolute right-[-20px] bottom-[-20px] opacity-20 md:opacity-40 pointer-events-none">
+                    <svg width="320" height="320" viewBox="0 0 200 200" fill="none">
+                        <path d="M100 20L170 170H30L100 20Z" stroke="white" stroke-width="8" stroke-dasharray="10 5"/>
+                        <circle cx="100" cy="110" r="30" fill="#F59E0B"/>
+                        <path d="M100 90V115M100 125V130" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Chapter Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Card 1 -->
+                <div onclick="switchTab('chap1')" class="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-xl flex items-center justify-center text-brandBlue dark:text-sky-400 font-bold text-xl mb-3 group-hover:scale-110 transition">
+                            01
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1 group-hover:text-brandBlue transition">Before an Earthquake</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Emergency kits, safe areas, evacuation routes, and school drills.</p>
+                    </div>
+                    <span class="text-xs font-bold text-brandBlue dark:text-sky-400 flex items-center gap-1">Read Chapter <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Card 2 -->
+                <div onclick="switchTab('chap2')" class="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 dark:bg-amber-900/50 rounded-xl flex items-center justify-center text-amber-600 dark:text-amber-400 font-bold text-xl mb-3 group-hover:scale-110 transition">
+                            02
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1 group-hover:text-amber-600 transition">During an Earthquake</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Staying calm, protecting head/neck, and following teacher instructions.</p>
+                    </div>
+                    <span class="text-xs font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1">Read Chapter <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Card 3 -->
+                <div onclick="switchTab('chap3')" class="bg-white dark:bg-slate-800 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/50 rounded-xl flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-bold text-xl mb-3 group-hover:scale-110 transition">
+                            03
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1 group-hover:text-emerald-600 transition">After an Earthquake</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Evacuation protocols, meeting points, and First Conditional rules.</p>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">Read Chapter <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Card 4 -->
+                <div onclick="switchTab('chap4')" class="bg-slate-900 text-white p-5 rounded-2xl border border-amber-500/40 shadow-sm hover:shadow-md transition cursor-pointer group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center font-bold text-xl mb-3 group-hover:scale-110 transition">
+                            04
+                        </div>
+                        <h3 class="font-bold text-lg text-white mb-1 text-amber-400">Writing Workshop</h3>
+                        <p class="text-xs text-slate-300 mb-3">5 Essential Exercises: Should / Shouldn't & First Conditional practice.</p>
+                    </div>
+                    <span class="text-xs font-bold text-amber-400 flex items-center gap-1">Start Workshop <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: CHAPTER 1 ================= -->
+        <section id="sec-chap1" class="tab-content hidden space-y-6">
+            <!-- Chapter Header -->
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brandBlue dark:text-sky-400">Chapter 1</span>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">BEFORE AN EARTHQUAKE: PREPARATION</h2>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Learn how 4th-grade students in SJL prepare before an earthquake happens.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold rounded-lg">Grammar: SHOULD / SHOULDN'T</span>
+                </div>
+            </div>
+
+            <!-- Content Grid: SVG Graphic + Story Text -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- SVG Illustration -->
+                <div class="bg-blue-50 dark:bg-slate-800 p-6 rounded-2xl border border-blue-100 dark:border-slate-700 flex flex-col items-center justify-center text-center">
+                    <svg class="w-48 h-48 mb-4" viewBox="0 0 200 200" fill="none">
+                        <!-- Emergency Backpack Graphic -->
+                        <rect x="50" y="60" width="100" height="110" rx="20" fill="#0F4C81"/>
+                        <rect x="65" y="40" width="70" height="30" rx="10" fill="#D91C1C"/>
+                        <rect x="70" y="80" width="60" height="40" rx="8" fill="#F59E0B"/>
+                        <!-- First Aid Cross -->
+                        <rect x="92" y="90" width="16" height="20" fill="white"/>
+                        <rect x="90" y="92" width="20" height="16" fill="white"/>
+                        <!-- Flashlight icon sticking out -->
+                        <rect x="135" y="70" width="25" height="12" rx="4" fill="#334155" transform="rotate(-30 135 70)"/>
+                    </svg>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Emergency Backpack (Mochila de Emergencia)</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Always keep water, first aid supplies, and a flashlight ready at home and school.</p>
+                </div>
+
+                <!-- Story Reading Block -->
+                <div class="lg:col-span-2 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 leading-relaxed text-slate-700 dark:text-slate-300 space-y-4">
+                    <h3 class="font-bold text-slate-900 dark:text-white text-lg border-b border-slate-100 dark:border-slate-700 pb-2">
+                        Reading: Preparation in San Juan de Lurigancho
+                    </h3>
+                    <p>
+                        Earthquakes can happen at any moment in Lima. Students at <strong class="text-brandBlue dark:text-sky-400">I.E. N.° 0148 Maestro Víctor Raúl Haya de la Torre</strong> learn how to prepare before an emergency.
+                    </p>
+                    <p>
+                        First, every family <span class="voc-word" onclick="openVocabModal('Emergency kit')">should prepare an emergency kit</span> with <span class="voc-word" onclick="openVocabModal('Water')">water</span>, non-perishable food, a <span class="voc-word" onclick="openVocabModal('Flashlight')">flashlight</span>, and a <span class="voc-word" onclick="openVocabModal('First aid kit')">first aid kit</span>. Second, students should identify the <span class="voc-word" onclick="openVocabModal('Safe area')">safe area</span> in their classroom and know the <span class="voc-word" onclick="openVocabModal('Evacuation route')">evacuation route</span>.
+                    </p>
+                    <p>
+                        We shouldn’t block doors or hallways with heavy backpacks. Also, families should organize a clear <span class="voc-word" onclick="openVocabModal('Family plan')">family plan</span>. Finally, all students should participate responsibly in every school <span class="voc-word" onclick="openVocabModal('Drill')">drill</span>!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vocabulary Flash Cards -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700">
+                <h3 class="font-bold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-wider">Target Vocabulary - Chapter 1</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 text-xs">
+                    <button onclick="openVocabModal('Earthquake')" class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 text-left font-semibold hover:border-brandBlue transition">
+                        <i class="fa-solid fa-house-crack text-brandRed mr-1"></i> Earthquake
+                    </button>
+                    <button onclick="openVocabModal('Emergency kit')" class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 text-left font-semibold hover:border-brandBlue transition">
+                        <i class="fa-solid fa-suitcase-medical text-brandBlue mr-1"></i> Emergency kit
+                    </button>
+                    <button onclick="openVocabModal('Flashlight')" class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 text-left font-semibold hover:border-brandBlue transition">
+                        <i class="fa-solid fa-flashlight text-brandYellow mr-1"></i> Flashlight
+                    </button>
+                    <button onclick="openVocabModal('Safe area')" class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 text-left font-semibold hover:border-brandBlue transition">
+                        <i class="fa-solid fa-shield text-brandGreen mr-1"></i> Safe area
+                    </button>
+                    <button onclick="openVocabModal('Drill')" class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 text-left font-semibold hover:border-brandBlue transition">
+                        <i class="fa-solid fa-users text-purple-500 mr-1"></i> Drill
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chapter 1 Interactive Quiz -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-bold text-slate-900 dark:text-white text-lg">Chapter 1 Activities</h3>
+                    <span id="ch1-score-display" class="text-xs font-bold bg-blue-100 text-brandBlue px-3 py-1 rounded-full">Score: 0 / 10</span>
+                </div>
+
+                <!-- Activity 1: Multiple Choice -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">1. What should every family prepare before an earthquake?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q1" value="a" class="accent-brandBlue"> a) A new video game
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q1" value="b" class="accent-brandBlue"> b) An emergency kit
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q1" value="c" class="accent-brandBlue"> c) Heavy furniture
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Activity 2: Fill Should/Shouldn't -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">2. Complete: We __________ block the classroom doors with backpacks.</p>
+                    <div class="flex gap-3 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q2" value="should" class="accent-brandBlue"> should
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q2" value="shouldn't" class="accent-brandBlue"> shouldn't
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Activity 3: True / False Recommendation -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">3. Is this recommendation correct? "Students should know the evacuation route."</p>
+                    <div class="flex gap-3 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q3" value="correct" class="accent-brandBlue"> Correct recommendation
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch1_q3" value="incorrect" class="accent-brandBlue"> Incorrect recommendation
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                    <button onclick="checkChapter1()" class="px-5 py-2.5 bg-brandBlue hover:bg-blue-800 text-white font-bold text-xs rounded-xl transition shadow">
+                        CHECK ANSWERS
+                    </button>
+                    <button onclick="resetChapter1()" class="px-4 py-2.5 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold text-xs rounded-xl hover:bg-slate-300 transition">
+                        TRY AGAIN
+                    </button>
+                </div>
+                <div id="ch1-feedback" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: CHAPTER 2 ================= -->
+        <section id="sec-chap2" class="tab-content hidden space-y-6">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Chapter 2</span>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">DURING AN EARTHQUAKE: ACTION</h2>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">How to act calmly inside the school classroom during seismic movement.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 text-xs font-bold rounded-lg">Grammar: SHOULD / SHOULDN'T</span>
+                </div>
+            </div>
+
+            <!-- Content Grid: SVG Graphic + Story Text -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- SVG Illustration -->
+                <div class="bg-amber-50 dark:bg-slate-800 p-6 rounded-2xl border border-amber-100 dark:border-slate-700 flex flex-col items-center justify-center text-center">
+                    <svg class="w-48 h-48 mb-4" viewBox="0 0 200 200" fill="none">
+                        <!-- Desk and Cover Graphic -->
+                        <rect x="30" y="100" width="140" height="20" rx="4" fill="#B45309"/>
+                        <rect x="45" y="120" width="15" height="50" fill="#78350F"/>
+                        <rect x="140" y="120" width="15" height="50" fill="#78350F"/>
+                        <!-- Student crouching under desk -->
+                        <circle cx="100" cy="130" r="16" fill="#F59E0B"/>
+                        <path d="M85 155 Q100 140 115 155" fill="#0F4C81" stroke="#0F4C81" stroke-width="8"/>
+                    </svg>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Drop, Cover & Hold On</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Protect your head under desks and stay away from glass windows.</p>
+                </div>
+
+                <!-- Story Reading Block -->
+                <div class="lg:col-span-2 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 leading-relaxed text-slate-700 dark:text-slate-300 space-y-4">
+                    <h3 class="font-bold text-slate-900 dark:text-white text-lg border-b border-slate-100 dark:border-slate-700 pb-2">
+                        Reading: Seismic Safety in the Classroom
+                    </h3>
+                    <p>
+                        It is Tuesday morning at our school in San Juan de Lurigancho. Suddenly, the ground begins to shake!
+                    </p>
+                    <p>
+                        Students must <span class="voc-word" onclick="openVocabModal('Stay calm')">stay calm</span> immediately. You <span class="voc-word" onclick="openVocabModal('Protect')">should protect</span> your <span class="voc-word" onclick="openVocabModal('Head')">head</span> and <span class="voc-word" onclick="openVocabModal('Neck')">neck</span> with your hands or cover under a heavy desk.
+                    </p>
+                    <p>
+                        During the shaking, students shouldn’t <span class="voc-word" onclick="openVocabModal('Run')">run</span>, shouldn’t <span class="voc-word" onclick="openVocabModal('Push')">push</span>, and shouldn’t shout. Stay away from glass <span class="voc-word" onclick="openVocabModal('Window')">windows</span> and listen carefully to the <span class="voc-word" onclick="openVocabModal('Teacher\'s instructions')">teacher’s instructions</span>. Do not use stairs while the floor is shaking!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chapter 2 Interactive Quiz -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-bold text-slate-900 dark:text-white text-lg">Chapter 2 Activities</h3>
+                    <span id="ch2-score-display" class="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full">Score: 0 / 10</span>
+                </div>
+
+                <!-- Activity 1 -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">1. What body parts should you protect during an earthquake?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch2_q1" value="a" class="accent-amber-500"> a) Legs and feet
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch2_q1" value="b" class="accent-amber-500"> b) Head and neck
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch2_q1" value="c" class="accent-amber-500"> c) Hands and elbows
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">2. Complete: Students __________ run or push classmates in the classroom.</p>
+                    <div class="flex gap-3 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch2_q2" value="should" class="accent-amber-500"> should
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch2_q2" value="shouldn't" class="accent-amber-500"> shouldn't
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                    <button onclick="checkChapter2()" class="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold text-xs rounded-xl transition shadow">
+                        CHECK ANSWERS
+                    </button>
+                    <button onclick="resetChapter2()" class="px-4 py-2.5 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold text-xs rounded-xl hover:bg-slate-300 transition">
+                        TRY AGAIN
+                    </button>
+                </div>
+                <div id="ch2-feedback" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: CHAPTER 3 ================= -->
+        <section id="sec-chap3" class="tab-content hidden space-y-6">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Chapter 3</span>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">AFTER AN EARTHQUAKE: EVACUATION</h2>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Following evacuation protocols and building safety post-earthquake.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300 text-xs font-bold rounded-lg">Grammar: FIRST CONDITIONAL</span>
+                </div>
+            </div>
+
+            <!-- Content Grid: SVG Graphic + Story Text -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- SVG Illustration -->
+                <div class="bg-emerald-50 dark:bg-slate-800 p-6 rounded-2xl border border-emerald-100 dark:border-slate-700 flex flex-col items-center justify-center text-center">
+                    <svg class="w-48 h-48 mb-4" viewBox="0 0 200 200" fill="none">
+                        <!-- Safe Meeting Point Sign -->
+                        <circle cx="100" cy="80" r="45" fill="#10B981"/>
+                        <text x="100" y="90" font-family="Arial, sans-serif" font-weight="900" font-size="36" fill="white" text-anchor="middle">S</text>
+                        <rect x="95" y="125" width="10" height="55" fill="#475569"/>
+                    </svg>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-sm">Safe Meeting Point (Punto de Encuentro)</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Walk calmly to the designated safety circle in the school yard.</p>
+                </div>
+
+                <!-- Story Reading Block -->
+                <div class="lg:col-span-2 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 leading-relaxed text-slate-700 dark:text-slate-300 space-y-4">
+                    <h3 class="font-bold text-slate-900 dark:text-white text-lg border-b border-slate-100 dark:border-slate-700 pb-2">
+                        Reading: Safe Evacuation Protocol
+                    </h3>
+                    <p>
+                        When the tremor stops, <span class="voc-word" onclick="openVocabModal('After the earthquake')">after the earthquake</span>, students wait for the teacher’s signal.
+                    </p>
+                    <p>
+                        Everyone should follow the official <span class="voc-word" onclick="openVocabModal('Evacuation route')">evacuation route</span> calmly. Walk in an orderly line to the school courtyard’s <span class="voc-word" onclick="openVocabModal('Safe meeting point')">safe meeting point</span> (marked with a green "S" circle).
+                    </p>
+                    <p>
+                        Stay with your class group so teachers can check attendance. If someone needs <span class="voc-word" onclick="openVocabModal('Help')">help</span>, inform an adult immediately. <strong class="text-emerald-600 dark:text-emerald-400">If we follow the safety rules, we will be safer.</strong> Never return to the classroom without authorization!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chapter 3 Interactive Quiz -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-bold text-slate-900 dark:text-white text-lg">Chapter 3 Activities</h3>
+                    <span id="ch3-score-display" class="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">Score: 0 / 10</span>
+                </div>
+
+                <!-- Activity 1 -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">1. Complete the First Conditional: If students follow the rules, they __________ (be) safer.</p>
+                    <div class="flex gap-3 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch3_q1" value="will be" class="accent-emerald-500"> will be
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch3_q1" value="are" class="accent-emerald-500"> are
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="space-y-3">
+                    <p class="font-bold text-sm text-slate-800 dark:text-slate-200">2. Where should students go after leaving the classroom?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch3_q2" value="a" class="accent-emerald-500"> a) Back to their desks
+                        </label>
+                        <label class="p-3 bg-slate-50 dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center gap-2 cursor-pointer hover:bg-slate-100">
+                            <input type="radio" name="ch3_q2" value="b" class="accent-emerald-500"> b) To the safe meeting point in the courtyard
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                    <button onclick="checkChapter3()" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl transition shadow">
+                        CHECK ANSWERS
+                    </button>
+                    <button onclick="resetChapter3()" class="px-4 py-2.5 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold text-xs rounded-xl hover:bg-slate-300 transition">
+                        TRY AGAIN
+                    </button>
+                </div>
+                <div id="ch3-feedback" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: CHAPTER 4 (WRITING WORKSHOP) ================= -->
+        <section id="sec-chap4" class="tab-content hidden space-y-6">
+            <!-- Distinct Header for Chapter 4 -->
+            <div class="bg-gradient-to-r from-slate-900 via-brandBlue to-slate-900 text-white p-6 md:p-8 rounded-3xl border border-amber-500/30 shadow-xl space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-amber-500 text-slate-900 font-extrabold text-xs uppercase tracking-wider rounded-full">
+                        Chapter 4 • Intensive Writing Practice
+                    </span>
+                    <span id="ch4-score-badge" class="px-3 py-1 bg-white/20 backdrop-blur-md text-amber-300 font-bold text-xs rounded-lg border border-white/20">
+                        Workshop Score: 0 / 15 Stars
+                    </span>
+                </div>
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white tracking-tight">
+                    LET'S PRACTISE OUR WRITING! <span class="text-amber-400">GRAMMAR WORKSHOP</span>
+                </h2>
+                <p class="text-xs md:text-sm text-slate-200 max-w-3xl leading-relaxed">
+                    Welcome to the grammar & writing lab. Practice building correct sentences with <strong class="text-amber-300">SHOULD / SHOULDN'T</strong> and <strong class="text-amber-300">FIRST CONDITIONAL</strong>. Complete all 5 exercises below!
+                </p>
+            </div>
+
+            <!-- EXERCISE 1 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-extrabold text-base text-slate-900 dark:text-white text-brandBlue dark:text-sky-400 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-brandBlue text-white rounded-lg flex items-center justify-center text-xs">1</span>
+                        EXERCISE 1 – CHOOSE THE CORRECT ANSWER
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Instructions: Select the best option to complete each earthquake safety sentence.</p>
+                </div>
+
+                <div class="space-y-4 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                    <!-- Q1 -->
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl space-y-2">
+                        <p>1. We <span class="underline underline-offset-4 decoration-amber-500">______</span> stay calm during an earthquake.</p>
+                        <div class="flex flex-wrap gap-4 font-normal">
+                            <label class="cursor-pointer"><input type="radio" name="ex1_1" value="should" class="accent-brandBlue"> a) should</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_1" value="shouldn't" class="accent-brandBlue"> b) shouldn't</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_1" value="are" class="accent-brandBlue"> c) are</label>
+                        </div>
+                    </div>
+                    <!-- Q2 -->
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl space-y-2">
+                        <p>2. Students <span class="underline underline-offset-4 decoration-amber-500">______</span> run or push during an earthquake.</p>
+                        <div class="flex flex-wrap gap-4 font-normal">
+                            <label class="cursor-pointer"><input type="radio" name="ex1_2" value="should" class="accent-brandBlue"> a) should</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_2" value="shouldn't" class="accent-brandBlue"> b) shouldn't</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_2" value="will" class="accent-brandBlue"> c) will</label>
+                        </div>
+                    </div>
+                    <!-- Q3 -->
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl space-y-2">
+                        <p>3. If we follow the safety rules, we <span class="underline underline-offset-4 decoration-amber-500">______</span> be safer.</p>
+                        <div class="flex flex-wrap gap-4 font-normal">
+                            <label class="cursor-pointer"><input type="radio" name="ex1_3" value="will" class="accent-brandBlue"> a) will</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_3" value="should" class="accent-brandBlue"> b) should</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_3" value="shouldn't" class="accent-brandBlue"> c) shouldn't</label>
+                        </div>
+                    </div>
+                    <!-- Q4 -->
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl space-y-2">
+                        <p>4. You <span class="underline underline-offset-4 decoration-amber-500">______</span> prepare an emergency kit at home.</p>
+                        <div class="flex flex-wrap gap-4 font-normal">
+                            <label class="cursor-pointer"><input type="radio" name="ex1_4" value="should" class="accent-brandBlue"> a) should</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_4" value="shouldn't" class="accent-brandBlue"> b) shouldn't</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_4" value="is" class="accent-brandBlue"> c) is</label>
+                        </div>
+                    </div>
+                    <!-- Q5 -->
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/40 rounded-xl space-y-2">
+                        <p>5. If students run in hallways, they <span class="underline underline-offset-4 decoration-amber-500">______</span> put themselves at risk.</p>
+                        <div class="flex flex-wrap gap-4 font-normal">
+                            <label class="cursor-pointer"><input type="radio" name="ex1_5" value="will" class="accent-brandBlue"> a) will</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_5" value="shouldn't" class="accent-brandBlue"> b) shouldn't</label>
+                            <label class="cursor-pointer"><input type="radio" name="ex1_5" value="don't" class="accent-brandBlue"> c) don't</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 2 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-extrabold text-base text-slate-900 dark:text-white text-brandBlue dark:text-sky-400 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-brandBlue text-white rounded-lg flex items-center justify-center text-xs">2</span>
+                        EXERCISE 2 – COMPLETE THE SENTENCES
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Instructions: Type <strong>should</strong> or <strong>shouldn't</strong> into the answer boxes.</p>
+                </div>
+
+                <div class="space-y-3 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>1. We</span>
+                        <input type="text" id="ex2_1" placeholder="should / shouldn't" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-40 font-mono">
+                        <span>prepare an emergency kit.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>2. Students</span>
+                        <input type="text" id="ex2_2" placeholder="should / shouldn't" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-40 font-mono">
+                        <span>push their classmates.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>3. You</span>
+                        <input type="text" id="ex2_3" placeholder="should / shouldn't" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-40 font-mono">
+                        <span>listen to the teacher.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>4. We</span>
+                        <input type="text" id="ex2_4" placeholder="should / shouldn't" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-40 font-mono">
+                        <span>stand near windows during shaking.</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <span>5. Students</span>
+                        <input type="text" id="ex2_5" placeholder="should / shouldn't" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-40 font-mono">
+                        <span>follow the school safety plan.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 3 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-extrabold text-base text-slate-900 dark:text-white text-brandBlue dark:text-sky-400 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-brandBlue text-white rounded-lg flex items-center justify-center text-xs">3</span>
+                        EXERCISE 3 – COMPLETE THE FIRST CONDITIONAL
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                        Instructions: Write the correct verb form in brackets. Example: <em>If we <strong>follow</strong> rules, we <strong>will be</strong> safe.</em>
+                    </p>
+                </div>
+
+                <div class="space-y-3 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span>1. If we</span>
+                        <input type="text" id="ex3_1" placeholder="(follow)" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-32 font-mono">
+                        <span>the rules, we will be safer.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span>2. If students</span>
+                        <input type="text" id="ex3_2" placeholder="(run)" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-32 font-mono">
+                        <span>, they will put themselves at risk.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span>3. If we prepare an emergency kit, we</span>
+                        <input type="text" id="ex3_3" placeholder="(be)" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-32 font-mono">
+                        <span>ready.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span>4. If it</span>
+                        <input type="text" id="ex3_4" placeholder="(rain)" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-32 font-mono">
+                        <span>heavily, there will be floods.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span>5. If everyone</span>
+                        <input type="text" id="ex3_5" placeholder="(help)" class="p-2 border border-slate-300 dark:border-slate-600 rounded-lg dark:bg-slate-700 text-xs w-32 font-mono">
+                        <span>, we will protect our community.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 4 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-extrabold text-base text-slate-900 dark:text-white text-brandBlue dark:text-sky-400 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-brandBlue text-white rounded-lg flex items-center justify-center text-xs">4</span>
+                        EXERCISE 4 – PUT THE WORDS IN ORDER
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Instructions: Unscramble the words and type the full correct sentence.</p>
+                </div>
+
+                <div class="space-y-4 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                    <div class="space-y-1.5">
+                        <p class="text-slate-500 dark:text-slate-400">1. scrambled: <code class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-amber-600 dark:text-amber-400">should / We / calm / stay</code></p>
+                        <input type="text" id="ex4_1" placeholder="Type complete sentence..." class="w-full p-2.5 border border-slate-300 dark:border-slate-600 rounded-xl dark:bg-slate-700 text-xs font-mono">
+                    </div>
+                    <div class="space-y-1.5">
+                        <p class="text-slate-500 dark:text-slate-400">2. scrambled: <code class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-amber-600 dark:text-amber-400">run / shouldn't / Students / or push</code></p>
+                        <input type="text" id="ex4_2" placeholder="Type complete sentence..." class="w-full p-2.5 border border-slate-300 dark:border-slate-600 rounded-xl dark:bg-slate-700 text-xs font-mono">
+                    </div>
+                    <div class="space-y-1.5">
+                        <p class="text-slate-500 dark:text-slate-400">3. scrambled: <code class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-amber-600 dark:text-amber-400">follow / If / rules / we / the / will / be / safer</code></p>
+                        <input type="text" id="ex4_3" placeholder="Type complete sentence..." class="w-full p-2.5 border border-slate-300 dark:border-slate-600 rounded-xl dark:bg-slate-700 text-xs font-mono">
+                    </div>
+                    <div class="space-y-1.5">
+                        <p class="text-slate-500 dark:text-slate-400">4. scrambled: <code class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-amber-600 dark:text-amber-400">emergency kit / should / prepare / an / We</code></p>
+                        <input type="text" id="ex4_4" placeholder="Type complete sentence..." class="w-full p-2.5 border border-slate-300 dark:border-slate-600 rounded-xl dark:bg-slate-700 text-xs font-mono">
+                    </div>
+                    <div class="space-y-1.5">
+                        <p class="text-slate-500 dark:text-slate-400">5. scrambled: <code class="bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded text-amber-600 dark:text-amber-400">students / If / run / will / risk / they / at / themselves / put</code></p>
+                        <input type="text" id="ex4_5" placeholder="Type complete sentence..." class="w-full p-2.5 border border-slate-300 dark:border-slate-600 rounded-xl dark:bg-slate-700 text-xs font-mono">
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 5 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <h3 class="font-extrabold text-base text-slate-900 dark:text-white text-brandBlue dark:text-sky-400 flex items-center gap-2">
+                        <span class="w-7 h-7 bg-brandBlue text-white rounded-lg flex items-center justify-center text-xs">5</span>
+                        EXERCISE 5 – MATCH THE SENTENCES
+                    </h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Instructions: Match each sentence starter in Column A with its correct ending from Column B.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-semibold">
+                    <!-- Matching selects -->
+                    <div class="space-y-3">
+                        <div class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center justify-between">
+                            <span>1. We should...</span>
+                            <select id="ex5_1" class="p-1.5 bg-white dark:bg-slate-800 border rounded font-mono text-xs">
+                                <option value="">Select match</option>
+                                <option value="A">A. run during an earthquake.</option>
+                                <option value="B">B. prepare an emergency kit.</option>
+                                <option value="C">C. we will be safer.</option>
+                                <option value="D">D. they will put others at risk.</option>
+                                <option value="E">E. listen to your teacher.</option>
+                            </select>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center justify-between">
+                            <span>2. Students shouldn't...</span>
+                            <select id="ex5_2" class="p-1.5 bg-white dark:bg-slate-800 border rounded font-mono text-xs">
+                                <option value="">Select match</option>
+                                <option value="A">A. run during an earthquake.</option>
+                                <option value="B">B. prepare an emergency kit.</option>
+                                <option value="C">C. we will be safer.</option>
+                                <option value="D">D. they will put others at risk.</option>
+                                <option value="E">E. listen to your teacher.</option>
+                            </select>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center justify-between">
+                            <span>3. If we follow the rules,...</span>
+                            <select id="ex5_3" class="p-1.5 bg-white dark:bg-slate-800 border rounded font-mono text-xs">
+                                <option value="">Select match</option>
+                                <option value="A">A. run during an earthquake.</option>
+                                <option value="B">B. prepare an emergency kit.</option>
+                                <option value="C">C. we will be safer.</option>
+                                <option value="D">D. they will put others at risk.</option>
+                                <option value="E">E. listen to your teacher.</option>
+                            </select>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center justify-between">
+                            <span>4. If students push,...</span>
+                            <select id="ex5_4" class="p-1.5 bg-white dark:bg-slate-800 border rounded font-mono text-xs">
+                                <option value="">Select match</option>
+                                <option value="A">A. run during an earthquake.</option>
+                                <option value="B">B. prepare an emergency kit.</option>
+                                <option value="C">C. we will be safer.</option>
+                                <option value="D">D. they will put others at risk.</option>
+                                <option value="E">E. listen to your teacher.</option>
+                            </select>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 flex items-center justify-between">
+                            <span>5. You should...</span>
+                            <select id="ex5_5" class="p-1.5 bg-white dark:bg-slate-800 border rounded font-mono text-xs">
+                                <option value="">Select match</option>
+                                <option value="A">A. run during an earthquake.</option>
+                                <option value="B">B. prepare an emergency kit.</option>
+                                <option value="C">C. we will be safer.</option>
+                                <option value="D">D. they will put others at risk.</option>
+                                <option value="E">E. listen to your teacher.</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Column B Reference Box -->
+                    <div class="bg-blue-50 dark:bg-slate-700/30 p-4 rounded-xl border border-blue-100 dark:border-slate-600 text-xs space-y-2">
+                        <h4 class="font-bold text-brandBlue dark:text-sky-400 uppercase tracking-wider">Column B Options</h4>
+                        <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                            <li><strong>A.</strong> run during an earthquake.</li>
+                            <li><strong>B.</strong> prepare an emergency kit.</li>
+                            <li><strong>C.</strong> we will be safer.</li>
+                            <li><strong>D.</strong> they will put others at risk.</li>
+                            <li><strong>E.</strong> listen to your teacher.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4 Workshop Actions & Feedback -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-center gap-3">
+                    <button onclick="checkChapter4()" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-slate-900 font-extrabold text-sm rounded-xl shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-check"></i> CHECK ANSWERS
+                    </button>
+                    <button onclick="resetChapter4()" class="px-5 py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-bold text-xs rounded-xl hover:bg-slate-300 transition">
+                        TRY AGAIN
+                    </button>
+                </div>
+                <div id="ch4-feedback" class="hidden text-sm font-bold p-3 rounded-xl"></div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: GRAMMAR CORNER ================= -->
+        <section id="sec-grammar" class="tab-content hidden space-y-6">
+            <div class="bg-gradient-to-r from-brandBlue to-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-lg space-y-2">
+                <span class="px-3 py-1 bg-brandYellow text-slate-900 font-bold text-xs rounded-full uppercase tracking-wider">Grammar Corner</span>
+                <h2 class="text-3xl font-extrabold">LET'S LEARN GRAMMAR!</h2>
+                <p class="text-xs md:text-sm text-slate-200">Key grammar structures for Unit 7: Recommendations and Conditional Actions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- SHOULD Card -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 rounded-xl flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white">A. SHOULD</h3>
+                            <p class="text-xs text-slate-500">Advice & Recommendations</p>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 font-mono text-xs">
+                        Subject + should + base verb
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> We <strong>should</strong> stay calm.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Students <strong>should</strong> follow the plan.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> You <strong>should</strong> prepare an emergency kit.</li>
+                    </ul>
+                </div>
+
+                <!-- SHOULDN'T Card -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-red-100 dark:bg-red-900/40 text-brandRed rounded-xl flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white">B. SHOULDN'T</h3>
+                            <p class="text-xs text-slate-500">Actions Not Recommended</p>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 font-mono text-xs">
+                        Subject + shouldn't + base verb
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-brandRed"></i> We <strong>shouldn't</strong> run during shaking.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-brandRed"></i> Students <strong>shouldn't</strong> push classmates.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-xmark text-brandRed"></i> You <strong>shouldn't</strong> stand near windows.</li>
+                    </ul>
+                </div>
+
+                <!-- FIRST CONDITIONAL Card -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/40 text-amber-600 rounded-xl flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-900 dark:text-white">C. FIRST CONDITIONAL</h3>
+                            <p class="text-xs text-slate-500">Real Possibility & Consequence</p>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-slate-50 dark:bg-slate-700/50 rounded-xl border border-slate-200 dark:border-slate-600 font-mono text-xs">
+                        If + present simple, will + base verb
+                    </div>
+                    <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-2">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-amber-500 mt-0.5"></i> If we <strong>follow</strong> rules, we <strong>will be</strong> safer.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-amber-500 mt-0.5"></i> If students <strong>run</strong>, they <strong>will put</strong> themselves at risk.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-arrow-right text-amber-500 mt-0.5"></i> If we <strong>prepare</strong>, we <strong>will be</strong> ready.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: GLOSSARY / VOCABULARY ================= -->
+        <section id="sec-glossary" class="tab-content hidden space-y-6">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-3">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">UNIT 7 INTERACTIVE VOCABULARY</h2>
+                        <p class="text-xs text-slate-500">Click any word card to view its Spanish translation, definition, etymology, and audio pronunciation.</p>
+                    </div>
+                    <i class="fa-solid fa-book-open text-brandBlue text-2xl"></i>
+                </div>
+
+                <div id="glossary-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION: CERTIFICATE ================= -->
+        <section id="sec-certificate" class="tab-content hidden space-y-6">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
+                <div class="text-center space-y-2">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">GET YOUR OFFICIAL CERTIFICATE</h2>
+                    <p class="text-xs text-slate-500">Enter your full name to generate your printable achievement certificate.</p>
+                </div>
+
+                <div class="max-w-md mx-auto space-y-3">
+                    <label class="block text-xs font-bold text-slate-700 dark:text-slate-300">Student Full Name (Nombre Completo del Estudiante):</label>
+                    <input type="text" id="student-name-input" placeholder="e.g. Juan Carlos Quispe Pérez" class="w-full p-3 border border-slate-300 dark:border-slate-600 rounded-xl dark:bg-slate-700 text-sm font-semibold">
+                    <button onclick="generateCertificate()" class="w-full py-3 bg-brandGreen hover:bg-emerald-600 text-white font-bold text-sm rounded-xl transition shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-certificate"></i> GENERATE MY CERTIFICATE
+                    </button>
+                </div>
+
+                <!-- Printable Certificate Container -->
+                <div id="printable-certificate" class="hidden mt-8 p-8 border-8 border-brandBlue bg-amber-50/40 rounded-3xl text-center space-y-6 relative overflow-hidden">
+                    <div class="flex items-center justify-between border-b-2 border-brandBlue pb-4">
+                        <div class="w-16 h-20">
+                            <!-- SVG Crest in Certificate -->
+                            <svg viewBox="0 0 200 250" class="w-full h-full">
+                                <path d="M 10 20 Q 100 0 190 20 L 190 140 C 190 200 100 245 100 245 C 100 245 10 200 10 140 Z" fill="#D91C1C" stroke="#1E293B" stroke-width="4"/>
+                                <path d="M 12 21 Q 100 2 188 21 L 188 65 L 12 65 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/>
+                                <text x="40" y="52" font-family="Arial" font-weight="900" font-size="34" fill="#1E293B" text-anchor="middle">I</text>
+                                <text x="100" y="52" font-family="Arial" font-weight="900" font-size="34" fill="#1E293B" text-anchor="middle">E</text>
+                                <text x="160" y="52" font-family="Arial" font-weight="900" font-size="34" fill="#1E293B" text-anchor="middle">M</text>
+                                <text x="100" y="85" font-family="Arial" font-weight="800" font-size="16" fill="#FFFFFF" text-anchor="middle">M.V.R.H.T</text>
+                                <path d="M 95 95 L 115 100 L 125 115 L 130 135 L 125 155 L 115 175 L 105 190 L 95 185 L 85 160 L 75 145 L 75 125 L 85 105 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+                                <text x="102" y="147" font-family="Arial" font-weight="900" font-size="22" fill="#1E293B" text-anchor="middle">148</text>
+                                <text x="100" y="235" font-family="Arial" font-weight="800" font-size="16" fill="#FFFFFF" text-anchor="middle">S.J.L.</text>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-extrabold text-sm text-slate-900 uppercase">I.E. N.° 0148 “MAESTRO VÍCTOR RAÚL HAYA DE LA TORRE”</h3>
+                            <p class="text-xs text-slate-600">San Juan de Lurigancho, Lima • Aula de Innovación</p>
+                            <p class="text-xs font-bold text-brandBlue">English Area • Secondary Level 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 py-4">
+                        <span class="text-xs uppercase tracking-widest text-slate-500 font-bold">Official Document of Accomplishment</span>
+                        <h2 class="text-3xl font-serif font-bold text-brandBlue">CERTIFICATE OF ACHIEVEMENT</h2>
+                        <p class="text-xs text-slate-600">This certifies that</p>
+                        <h3 id="cert-student-name" class="text-2xl font-bold text-slate-900 border-b-2 border-dashed border-slate-400 inline-block px-8 py-1">
+                            [Student Name]
+                        </h3>
+                        <p class="text-xs text-slate-600 max-w-lg mx-auto">
+                            has successfully completed all modules and exercises for Unit 7: <strong class="text-brandRed">“BE READY, STAY SAFE!”</strong>, mastering English earthquake safety recommendations and grammar.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200 text-xs">
+                        <div>
+                            <p class="text-slate-400">Total Stars</p>
+                            <p id="cert-stars" class="font-bold text-brandYellow text-lg">0 Stars</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-400">Date</p>
+                            <p id="cert-date" class="font-bold text-slate-800">2026</p>
+                        </div>
+                        <div class="border-t border-slate-400 pt-1 mt-4">
+                            <p class="font-bold text-slate-800">English Teacher Signature</p>
+                            <p class="text-[10px] text-slate-500">I.E. 0148 MVRHT</p>
+                        </div>
+                    </div>
+
+                    <div class="no-print pt-4">
+                        <button onclick="window.print()" class="px-6 py-2.5 bg-brandBlue text-white font-bold text-xs rounded-xl hover:bg-blue-900 transition">
+                            <i class="fa-solid fa-print"></i> Print / Save as PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VOCABULARY MODAL -->
+    <div id="vocab-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+        <div class="bg-white dark:bg-slate-800 max-w-md w-full rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-2xl space-y-4 relative">
+            <button onclick="closeVocabModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brandBlue/10 text-brandBlue rounded-xl flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-spell-check"></i>
+                </div>
+                <div>
+                    <h3 id="modal-word-en" class="font-extrabold text-xl text-slate-900 dark:text-white">Word</h3>
+                    <p id="modal-word-es" class="text-xs font-bold text-brandRed">Traducción</p>
+                </div>
+            </div>
+            
+            <div class="space-y-2 text-xs text-slate-600 dark:text-slate-300">
+                <p><strong>Definition (English):</strong> <span id="modal-def-en">Definition</span></p>
+                <p><strong>Etymology Note:</strong> <span id="modal-etym">Origin note</span></p>
+                <p><strong>Example:</strong> <em id="modal-example">Sentence</em></p>
+            </div>
+
+            <button id="modal-speech-btn" onclick="speakCurrentWord()" class="w-full py-2.5 bg-brandBlue hover:bg-blue-800 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-volume-high"></i> Listen Pronunciation (en-US)
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-4 text-center text-xs text-slate-500 dark:text-slate-400 transition-colors">
+        <p>© 2026 I.E. N.° 0148 “Maestro Víctor Raúl Haya de la Torre” – San Juan de Lurigancho.</p>
+        <p class="mt-1">Designed for Aula de Innovación Pedagógica (AIP) • Aligned with CNEB Peru</p>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Global State & Data
+        let totalStars = 0;
+        const maxStars = 45;
+        let currentFontSize = 16;
+        let activeVocabWord = "";
+
+        // Vocabulary Database
+        const vocabDB = {
+            "Earthquake": { es: "Sismo / Terremoto", def: "A sudden shaking of the ground caused by movement of tectonic plates.", etym: "From Latin 'terrae motus' (movement of the earth).", example: "Lima is located in a seismic zone, so we must prepare for an earthquake." },
+            "Floods": { es: "Inundaciones", def: "An overflow of a large amount of water beyond its normal limits.", etym: "From Old English 'flōd'.", example: "Heavy rains can cause severe floods in river valleys." },
+            "Drill": { es: "Simulacro", def: "A practice of emergency procedures to prepare for real incidents.", etym: "From Dutch 'drillen' (to turn, exercise).", example: "Our school drill helps students evacuate safely." },
+            "Evacuation": { es: "Evacuación", def: "The action of evacuating a place in an emergency.", etym: "From Latin 'evacuare' (to empty).", example: "Follow the evacuation sign to leave the classroom." },
+            "Emergency kit": { es: "Mochila de Emergencia", def: "A bag packed with essential survival items.", etym: "Modern emergency management terminology.", example: "Keep an emergency kit near the exit door." },
+            "First aid kit": { es: "Botiquín de Primeros Auxilios", def: "A collection of supplies for medical treatment.", etym: "First aid concept formalized in the late 19th century.", example: "The first aid kit includes bandages and antiseptic." },
+            "Stay calm": { es: "Mantener la calma", def: "To remain quiet, peaceful, and composed during stress.", etym: "From Italian 'calma'.", example: "Students should stay calm when the shaking begins." },
+            "Safe area": { es: "Zona segura", def: "A designated location offering protection during hazards.", etym: "Safety engineering vocabulary.", example: "Stand under structural columns as a safe area." },
+            "Evacuation route": { es: "Ruta de evacuación", def: "A clear path marked to lead people out of a building safely.", etym: "Standard safety protocol term.", example: "Keep the evacuation route free of chairs." },
+            "Safe meeting point": { es: "Punto de encuentro seguro", def: "A pre-agreed open space outside where everyone gathers.", etym: "Disaster response terminology.", example: "Our safe meeting point is the center of the schoolyard." },
+            "Safety rules": { es: "Normas de seguridad", def: "Official instructions designed to prevent danger.", etym: "Institutional governance terms.", example: "Respecting safety rules protects your classmates." },
+            "Protect": { es: "Proteger", def: "To keep safe from harm or injury.", etym: "From Latin 'protegere' (to cover in front).", example: "Protect your head with your hands." },
+            "Flashlight": { es: "Linterna", def: "A portable battery-operated electric light.", etym: "American English coinage (flash + light).", example: "Turn on the flashlight if power is cut." },
+            "Water": { es: "Agua", def: "Essential clear liquid for drinking and survival.", etym: "From Old English 'wæter'.", example: "Store clean drinking water in your kit." },
+            "Family plan": { es: "Plan familiar", def: "A coordinated safety strategy agreed upon by family members.", etym: "Civil defense guidance.", example: "Discuss your family plan with your parents." },
+            "Head": { es: "Cabeza", def: "The upper part of the human body.", etym: "From Germanic origin.", example: "Cover your head immediately." },
+            "Neck": { es: "Cuello", def: "The part of the body connecting head to torso.", etym: "From Old English 'hnecca'.", example: "Protect your head and neck." },
+            "Window": { es: "Ventana", def: "An opening in a wall fitted with glass.", etym: "From Old Norse 'vindauga' (wind-eye).", example: "Move away from glass windows." },
+            "Desk": { es: "Escritorio / Carpeta", def: "A piece of school furniture with a flat top.", etym: "From Medieval Latin 'desca'.", example: "Crouch under a heavy wooden desk." },
+            "Run": { es: "Correr", def: "To move rapidly on foot.", etym: "From Germanic roots.", example: "Do not run down the stairs!" },
+            "Push": { es: "Empujar", def: "To exert force on someone to move them away.", etym: "From Latin 'pulsare'.", example: "Never push others during an evacuation." },
+            "Shout": { es: "Gritar", def: "To utter a loud cry.", etym: "Middle English origin.", example: "Stay quiet and do not shout." },
+            "Teacher's instructions": { es: "Indicaciones de la docente", def: "Directions given by the educator in charge.", etym: "Educational terminology.", example: "Listen carefully to your teacher's instructions." },
+            "After the earthquake": { es: "Después del sismo", def: "The period following seismic tremors.", etym: "Temporal indicator.", example: "Check for safe pathways after the earthquake." },
+            "Help": { es: "Ayuda", def: "Assistance given to someone in need.", etym: "From Old English 'helpan'.", example: "Call out if you need immediate help." },
+            "Community": { es: "Comunidad", def: "A group of people living or studying together.", etym: "From Latin 'communitas'.", example: "We protect our school community." },
+            "Responsible": { es: "Responsable", def: "Having a duty to care for safety.", etym: "From Latin 'responsabilis'.", example: "Be a responsible student during drills." }
+        };
+
+        // Navigation Controller
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('bg-white/20', 'bg-amber-400', 'text-slate-900'));
+            
+            const target = document.getElementById('sec-' + tabId);
+            if (target) target.classList.remove('hidden');
+            
+            const btn = document.getElementById('nav-' + tabId);
+            if (btn && tabId !== 'chap4') btn.classList.add('bg-white/20');
+            
+            // Scroll smooth to top of content
+            window.scrollTo({ top: 120, behavior: 'smooth' });
+        }
+
+        // Theme Toggle
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('theme-icon');
+            if (document.documentElement.classList.contains('dark')) {
+                icon.className = 'fa-solid fa-sun text-amber-400';
+            } else {
+                icon.className = 'fa-solid fa-moon text-slate-700';
+            }
+        }
+
+        // Font Size Adjuster
+        function changeFontSize(delta) {
+            currentFontSize = Math.min(Math.max(currentFontSize + delta, 14), 22);
+            document.getElementById('content-container').style.fontSize = currentFontSize + 'px';
+        }
+
+        // Interactive Text Highlighter Tool
+        function applyHighlight(colorClass) {
+            const selection = window.getSelection();
+            if (!selection.rangeCount || selection.isCollapsed) {
+                alert("Please select some text first with your mouse or finger.");
+                return;
+            }
+            const range = selection.getRangeAt(0);
+            const span = document.createElement('span');
+            span.className = 'hl-' + colorClass;
+            try {
+                range.surroundContents(span);
+            } catch(e) {
+                alert("Highlight across complex elements isn't supported. Select text within a single paragraph.");
+            }
+            selection.removeAllRanges();
+        }
+
+        function removeHighlight() {
+            const selection = window.getSelection();
+            if (!selection.rangeCount || selection.isCollapsed) return;
+            const parent = selection.anchorNode.parentElement;
+            if (parent && (parent.classList.contains('hl-yellow') || parent.classList.contains('hl-green') || parent.classList.contains('hl-blue'))) {
+                const text = document.createTextNode(parent.textContent);
+                parent.replaceWith(text);
+            }
+        }
+
+        // Vocab Modal Controller
+        function openVocabModal(wordKey) {
+            const data = vocabDB[wordKey] || { es: wordKey, def: "Vocabulary term for earthquake safety.", etym: "English vocabulary.", example: `We use ${wordKey} in earthquake safety.` };
+            activeVocabWord = wordKey;
+            
+            document.getElementById('modal-word-en').innerText = wordKey;
+            document.getElementById('modal-word-es').innerText = data.es;
+            document.getElementById('modal-def-en').innerText = data.def;
+            document.getElementById('modal-etym').innerText = data.etym;
+            document.getElementById('modal-example').innerText = data.example;
+            
+            const modal = document.getElementById('vocab-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeVocabModal() {
+            const modal = document.getElementById('vocab-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function speakCurrentWord() {
+            if (!('speechSynthesis' in window)) {
+                alert("Audio speech synthesis is not supported in this browser.");
+                return;
+            }
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(activeVocabWord);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Star Counter & Progress Tracking
+        let scoredChapters = { ch1: 0, ch2: 0, ch3: 0, ch4: 0 };
+
+        function updateGlobalStars() {
+            totalStars = scoredChapters.ch1 + scoredChapters.ch2 + scoredChapters.ch3 + scoredChapters.ch4;
+            document.getElementById('star-count').innerText = totalStars;
+            
+            const percent = Math.min(Math.round((totalStars / maxStars) * 100), 100);
+            document.getElementById('overall-progress').style.width = percent + '%';
+        }
+
+        // CHAPTER 1 EVALUATION
+        function checkChapter1() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="ch1_q1"]:checked');
+            const q2 = document.querySelector('input[name="ch1_q2"]:checked');
+            const q3 = document.querySelector('input[name="ch1_q3"]:checked');
+
+            if (q1 && q1.value === 'b') score += 4;
+            if (q2 && q2.value === "shouldn't") score += 3;
+            if (q3 && q3.value === 'correct') score += 3;
+
+            scoredChapters.ch1 = score;
+            document.getElementById('ch1-score-display').innerText = `Score: ${score} / 10`;
+
+            const fb = document.getElementById('ch1-feedback');
+            fb.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-amber-100', 'text-amber-800');
+            if (score === 10) {
+                fb.classList.add('bg-green-100', 'text-green-800');
+                fb.innerHTML = `<i class="fa-solid fa-star text-amber-500"></i> Excellent! You earned 10 Stars!`;
+            } else {
+                fb.classList.add('bg-amber-100', 'text-amber-800');
+                fb.innerHTML = `Good try! You scored ${score}/10. Review your answers and try again.`;
+            }
+            updateGlobalStars();
+        }
+
+        function resetChapter1() {
+            document.querySelectorAll('input[name^="ch1_"]').forEach(r => r.checked = false);
+            document.getElementById('ch1-feedback').classList.add('hidden');
+        }
+
+        // CHAPTER 2 EVALUATION
+        function checkChapter2() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="ch2_q1"]:checked');
+            const q2 = document.querySelector('input[name="ch2_q2"]:checked');
+
+            if (q1 && q1.value === 'b') score += 5;
+            if (q2 && q2.value === "shouldn't") score += 5;
+
+            scoredChapters.ch2 = score;
+            document.getElementById('ch2-score-display').innerText = `Score: ${score} / 10`;
+
+            const fb = document.getElementById('ch2-feedback');
+            fb.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-amber-100', 'text-amber-800');
+            if (score === 10) {
+                fb.classList.add('bg-green-100', 'text-green-800');
+                fb.innerHTML = `<i class="fa-solid fa-star text-amber-500"></i> Well done! Perfect score of 10 Stars!`;
+            } else {
+                fb.classList.add('bg-amber-100', 'text-amber-800');
+                fb.innerHTML = `Score: ${score}/10. Check recommendations and try again.`;
+            }
+            updateGlobalStars();
+        }
+
+        function resetChapter2() {
+            document.querySelectorAll('input[name^="ch2_"]').forEach(r => r.checked = false);
+            document.getElementById('ch2-feedback').classList.add('hidden');
+        }
+
+        // CHAPTER 3 EVALUATION
+        function checkChapter3() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="ch3_q1"]:checked');
+            const q2 = document.querySelector('input[name="ch3_q2"]:checked');
+
+            if (q1 && q1.value === 'will be') score += 5;
+            if (q2 && q2.value === 'b') score += 5;
+
+            scoredChapters.ch3 = score;
+            document.getElementById('ch3-score-display').innerText = `Score: ${score} / 10`;
+
+            const fb = document.getElementById('ch3-feedback');
+            fb.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-amber-100', 'text-amber-800');
+            if (score === 10) {
+                fb.classList.add('bg-green-100', 'text-green-800');
+                fb.innerHTML = `<i class="fa-solid fa-star text-amber-500"></i> Great job! You earned 10 Stars!`;
+            } else {
+                fb.classList.add('bg-amber-100', 'text-amber-800');
+                fb.innerHTML = `Score: ${score}/10. Keep trying!`;
+            }
+            updateGlobalStars();
+        }
+
+        function resetChapter3() {
+            document.querySelectorAll('input[name^="ch3_"]').forEach(r => r.checked = false);
+            document.getElementById('ch3-feedback').classList.add('hidden');
+        }
+
+        // CHAPTER 4 (WRITING WORKSHOP) EVALUATION
+        function checkChapter4() {
+            let score = 0;
+
+            // Exercise 1 (3 points)
+            const ex1_1 = document.querySelector('input[name="ex1_1"]:checked');
+            const ex1_2 = document.querySelector('input[name="ex1_2"]:checked');
+            const ex1_3 = document.querySelector('input[name="ex1_3"]:checked');
+            const ex1_4 = document.querySelector('input[name="ex1_4"]:checked');
+            const ex1_5 = document.querySelector('input[name="ex1_5"]:checked');
+
+            if (ex1_1 && ex1_1.value === 'should') score += 0.6;
+            if (ex1_2 && ex1_2.value === "shouldn't") score += 0.6;
+            if (ex1_3 && ex1_3.value === 'will') score += 0.6;
+            if (ex1_4 && ex1_4.value === 'should') score += 0.6;
+            if (ex1_5 && ex1_5.value === 'will') score += 0.6;
+
+            // Exercise 2 (3 points)
+            const cleanStr = val => (val || "").trim().toLowerCase();
+            if (cleanStr(document.getElementById('ex2_1').value) === 'should') score += 0.6;
+            if (cleanStr(document.getElementById('ex2_2').value) === "shouldn't" || cleanStr(document.getElementById('ex2_2').value) === "shouldnt") score += 0.6;
+            if (cleanStr(document.getElementById('ex2_3').value) === 'should') score += 0.6;
+            if (cleanStr(document.getElementById('ex2_4').value) === "shouldn't" || cleanStr(document.getElementById('ex2_4').value) === "shouldnt") score += 0.6;
+            if (cleanStr(document.getElementById('ex2_5').value) === 'should') score += 0.6;
+
+            // Exercise 3 (3 points)
+            if (cleanStr(document.getElementById('ex3_1').value) === 'follow') score += 0.6;
+            if (cleanStr(document.getElementById('ex3_2').value) === 'run') score += 0.6;
+            if (cleanStr(document.getElementById('ex3_3').value) === 'will be') score += 0.6;
+            if (cleanStr(document.getElementById('ex3_4').value) === 'rains') score += 0.6;
+            if (cleanStr(document.getElementById('ex3_5').value) === 'helps') score += 0.6;
+
+            // Exercise 4 (3 points)
+            const normalize = s => cleanStr(s).replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s+/g," ");
+            if (normalize(document.getElementById('ex4_1').value) === 'we should stay calm') score += 0.6;
+            if (normalize(document.getElementById('ex4_2').value) === 'students shouldnt run or push' || normalize(document.getElementById('ex4_2').value) === "students shouldn't run or push") score += 0.6;
+            if (normalize(document.getElementById('ex4_3').value) === 'if we follow the rules we will be safer') score += 0.6;
+            if (normalize(document.getElementById('ex4_4').value) === 'we should prepare an emergency kit') score += 0.6;
+            if (normalize(document.getElementById('ex4_5').value) === 'if students run they will put themselves at risk') score += 0.6;
+
+            // Exercise 5 (3 points)
+            if (document.getElementById('ex5_1').value === 'B') score += 0.6;
+            if (document.getElementById('ex5_2').value === 'A') score += 0.6;
+            if (document.getElementById('ex5_3').value === 'C') score += 0.6;
+            if (document.getElementById('ex5_4').value === 'D') score += 0.6;
+            if (document.getElementById('ex5_5').value === 'E') score += 0.6;
+
+            const finalCh4Score = Math.round(score);
+            scoredChapters.ch4 = finalCh4Score;
+            document.getElementById('ch4-score-badge').innerText = `Workshop Score: ${finalCh4Score} / 15 Stars`;
+
+            const fb = document.getElementById('ch4-feedback');
+            fb.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-amber-100', 'text-amber-800');
+            if (finalCh4Score >= 13) {
+                fb.classList.add('bg-green-100', 'text-green-800');
+                fb.innerHTML = `<i class="fa-solid fa-trophy text-amber-500"></i> Outstanding! You completed Chapter 4 with ${finalCh4Score} Stars!`;
+            } else {
+                fb.classList.add('bg-amber-100', 'text-amber-800');
+                fb.innerHTML = `You earned ${finalCh4Score}/15 Stars. Check your spelling and try again!`;
+            }
+            updateGlobalStars();
+        }
+
+        function resetChapter4() {
+            document.querySelectorAll('input[name^="ex1_"]').forEach(r => r.checked = false);
+            for(let i=1; i<=5; i++){
+                if(document.getElementById('ex2_'+i)) document.getElementById('ex2_'+i).value = '';
+                if(document.getElementById('ex3_'+i)) document.getElementById('ex3_'+i).value = '';
+                if(document.getElementById('ex4_'+i)) document.getElementById('ex4_'+i).value = '';
+                if(document.getElementById('ex5_'+i)) document.getElementById('ex5_'+i).value = '';
+            }
+            document.getElementById('ch4-feedback').classList.add('hidden');
+        }
+
+        // Render Glossary Grid
+        function renderGlossary() {
+            const grid = document.getElementById('glossary-grid');
+            grid.innerHTML = '';
+            Object.keys(vocabDB).forEach(word => {
+                const item = vocabDB[word];
+                const card = document.createElement('div');
+                card.className = "p-4 bg-slate-50 dark:bg-slate-700/40 rounded-xl border border-slate-200 dark:border-slate-600 hover:border-brandBlue transition cursor-pointer flex flex-col justify-between";
+                card.onclick = () => openVocabModal(word);
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <h4 class="font-bold text-sm text-slate-900 dark:text-white">${word}</h4>
+                            <i class="fa-solid fa-volume-high text-brandBlue text-xs"></i>
+                        </div>
+                        <p class="text-xs font-semibold text-brandRed mb-2">${item.es}</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">${item.def}</p>
+                    </div>
+                    <span class="text-[10px] text-brandBlue dark:text-sky-400 font-bold mt-2 inline-block">Click for audio & details →</span>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Generate Certificate
+        function generateCertificate() {
+            const name = document.getElementById('student-name-input').value.trim();
+            if (!name) {
+                alert("Please enter your full name first!");
+                return;
+            }
+            document.getElementById('cert-student-name').innerText = name;
+            document.getElementById('cert-stars').innerText = `${totalStars} / ${maxStars} Stars`;
+            document.getElementById('cert-date').innerText = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            
+            const certBox = document.getElementById('printable-certificate');
+            certBox.classList.remove('hidden');
+            certBox.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Window Onload Initialization
+        window.onload = function() {
+            renderGlossary();
+            updateGlobalStars();
+        };
+    </script>
+</body>
+</html>
